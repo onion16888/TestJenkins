@@ -22,7 +22,7 @@ namespace TestJenkins.Droid
 			TextView text1 = FindViewById<TextView>(Resource.Id.textView1);
 			button.Click += delegate { 
 				button.Text = string.Format("{0} clicks!", count);
-				text1.Text = count.ToString();
+				text1.Text = string.Format("{0} clicks!", count);
 				count++;
 			};
 		}
