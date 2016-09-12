@@ -3,14 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70987D04-5FE2-4557-B20F-3FBB399F25CF}</ProjectGuid>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <ProjectGuid>{4F6E3469-59C8-4F79-966D-9BF4D1FFD495}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TestJenkins</RootNamespace>
-    <AssemblyName>TestJenkins</AssemblyName>
+    <RootNamespace>TestJenkins.Test</RootNamespace>
+    <AssemblyName>TestJenkins.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,10 +27,24 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Beer.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IBeerSearcher.cs" />
-    <Compile Include="SearchService.cs" />
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Test.cs" />
+    <Compile Include="MockBeerSearcher.cs" />
+    <Compile Include="SearchServiceTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestJenkins\TestJenkins.csproj">
+      <Project>{70987D04-5FE2-4557-B20F-3FBB399F25CF}</Project>
+      <Name>TestJenkins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
