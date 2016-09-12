@@ -20,7 +20,7 @@ namespace TestJenkins.iOS
 			Button.AccessibilityIdentifier = "myButton";
 			Button.TouchUpInside += delegate
 			{
-				var title = string.Format("{0} clicks!", count++);
+				var title = string.Format("you have {0} clicks!", count++);
 				Button.SetTitle(title, UIControlState.Normal);
 			};
 		}
