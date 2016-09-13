@@ -16,7 +16,7 @@ namespace TestJenkins.Test
 
 			var beers = searchService.FindBeers(" ");
 
-			Assert.AreEqual(1, beers.Count);
+			Assert.AreEqual(0, beers.Count);
 		}
 
 		[Test]
