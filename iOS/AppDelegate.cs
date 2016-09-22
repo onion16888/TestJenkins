@@ -21,6 +21,9 @@ namespace TestJenkins.iOS
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
+			#if ENABLE_TEST_CLOUD
+			    Xamarin.Calabash.Start();
+			#endif
 			return true;
 		}
 

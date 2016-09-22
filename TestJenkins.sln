@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJenkins", "TestJenkins\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJenkins.Test", "TestJenkins.Test\TestJenkins.Test.csproj", "{4F6E3469-59C8-4F79-966D-9BF4D1FFD495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJenknis.UITest", "TestJenknis.UITest\TestJenknis.UITest.csproj", "{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,5 +69,17 @@ Global
 		{4F6E3469-59C8-4F79-966D-9BF4D1FFD495}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{4F6E3469-59C8-4F79-966D-9BF4D1FFD495}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{4F6E3469-59C8-4F79-966D-9BF4D1FFD495}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Release|iPhone.Build.0 = Release|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{21B4A3AA-3DCA-4B01-A9B8-FBB124DBA28A}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
