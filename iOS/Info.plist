@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleName</key>
 	<string>TestJenkins</string>
+	<key>CFBundleDisplayName</key>
+	<string>TestJenkins</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.thinkpower.interviewer</string>
 	<key>CFBundleShortVersionString</key>
