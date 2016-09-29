@@ -46,9 +46,6 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
-    <BuildIpa>true</BuildIpa>
-    <IpaMetadata></IpaMetadata>
-    <IpaIncludeArtwork>false</IpaIncludeArtwork>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <Optimize>true</Optimize>
